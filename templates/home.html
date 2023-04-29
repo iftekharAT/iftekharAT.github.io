@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Link Shortener</title>
+    <style>
+        /* Center the page using flexbox layout */
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Style the form */
+        form {
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        /* Style the form inputs */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <h1>Link Shortener</h1>
+        <label for="link">Enter your link here:</label><br>
+        <input type="text" id="link" name="link"><br>
+        <input type="submit" value="Shorten">
+    </form>
+</body>
+</html>
